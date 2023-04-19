@@ -2,7 +2,7 @@ import os
 import shutil
 import yt_dlp as ytd
 
-URL = "https://www.youtube.com/watch?v=BpcemabDB3E&ab_channel=TimDessaint"
+URL = input("Enter the URL of the video")
 temp = "temp"
 
 def create_temp_dir(destination):
@@ -23,4 +23,3 @@ def download(target, destination):
 
 create_temp_dir(temp)
 download(target=URL, destination=temp)
-clean_up(temp)
